@@ -1,5 +1,6 @@
 #import "RouteRequest.h"
-#import "HTTPMessage.h"
+
+#import <CocoaHTTPServer/HTTPMessage.h>
 
 @implementation RouteRequest {
 	HTTPMessage *message;

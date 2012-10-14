@@ -14,6 +14,7 @@
 				270B11CC1628E9B0005A82FA /* Build Framework */,
 			);
 			dependencies = (
+				27073C4C162B78C5006BDF3A /* PBXTargetDependency */,
 				270B11CB1628E9A5005A82FA /* PBXTargetDependency */,
 			);
 			name = RoutingHTTPServerIOS;
@@ -52,11 +53,47 @@
 		27073C2C162B7712006BDF3A /* LICENSE.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27073C28162B770E006BDF3A /* LICENSE.txt */; };
 		27073C2D162B7714006BDF3A /* VERSION in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27073C29162B770E006BDF3A /* VERSION */; };
 		27073C2E162B7716006BDF3A /* RoutingHTTPServerLicense.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27073C26162B7700006BDF3A /* RoutingHTTPServerLicense.txt */; };
+		27073C4F162B79EE006BDF3A /* CocoaHTTPServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27073C44162B78A3006BDF3A /* CocoaHTTPServer.framework */; };
 		270B11941628E5A8005A82FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270B11931628E5A8005A82FA /* Foundation.framework */; };
 		270B11B41628E676005A82FA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270B11B31628E676005A82FA /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		27073C41162B78A3006BDF3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27073C2F162B78A2006BDF3A /* CocoaHTTPServer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 270B11901628E5A8005A82FA;
+			remoteInfo = CocoaHTTPServerStaticIOS;
+		};
+		27073C43162B78A3006BDF3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27073C2F162B78A2006BDF3A /* CocoaHTTPServer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 270B11B21628E676005A82FA;
+			remoteInfo = CocoaHTTPServerOSX;
+		};
+		27073C49162B78C1006BDF3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27073C2F162B78A2006BDF3A /* CocoaHTTPServer.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 270B118F1628E5A8005A82FA;
+			remoteInfo = CocoaHTTPServerStaticIOS;
+		};
+		27073C4B162B78C5006BDF3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27073C2F162B78A2006BDF3A /* CocoaHTTPServer.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 270B11A91628E667005A82FA;
+			remoteInfo = CocoaHTTPServerIOS;
+		};
+		27073C4D162B78CA006BDF3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27073C2F162B78A2006BDF3A /* CocoaHTTPServer.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 270B11B11628E676005A82FA;
+			remoteInfo = CocoaHTTPServerOSX;
+		};
 		270B11CA1628E9A5005A82FA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 270B11871628E5A8005A82FA /* Project object */;
@@ -97,6 +134,7 @@
 		27073C26162B7700006BDF3A /* RoutingHTTPServerLicense.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = RoutingHTTPServerLicense.txt; path = Frameworks/RoutingHTTPServer/RoutingHTTPServerLicense.txt; sourceTree = "<group>"; };
 		27073C28162B770E006BDF3A /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		27073C29162B770E006BDF3A /* VERSION */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = VERSION; sourceTree = "<group>"; };
+		27073C2F162B78A2006BDF3A /* CocoaHTTPServer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CocoaHTTPServer.xcodeproj; path = Frameworks/CocoaHTTPServer/CocoaHTTPServer.xcodeproj; sourceTree = "<group>"; };
 		270B11901628E5A8005A82FA /* libRoutingHTTPServer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRoutingHTTPServer.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		270B11931628E5A8005A82FA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		270B11B21628E676005A82FA /* RoutingHTTPServer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RoutingHTTPServer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,6 +157,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27073C4F162B79EE006BDF3A /* CocoaHTTPServer.framework in Frameworks */,
 				270B11B41628E676005A82FA /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -156,6 +195,15 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		27073C30162B78A2006BDF3A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27073C42162B78A3006BDF3A /* libCocoaHTTPServer.a */,
+				27073C44162B78A3006BDF3A /* CocoaHTTPServer.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		270B11851628E5A8005A82FA = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +226,7 @@
 		270B11921628E5A8005A82FA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				27073C2F162B78A2006BDF3A /* CocoaHTTPServer.xcodeproj */,
 				270B11931628E5A8005A82FA /* Foundation.framework */,
 				270B11B31628E676005A82FA /* Cocoa.framework */,
 				270B11B51628E676005A82FA /* Other Frameworks */,
@@ -240,6 +289,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				27073C4A162B78C1006BDF3A /* PBXTargetDependency */,
 			);
 			name = RoutingHTTPServerStaticIOS;
 			productName = RoutingHTTPServer;
@@ -258,6 +308,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				27073C4E162B78CA006BDF3A /* PBXTargetDependency */,
 			);
 			name = RoutingHTTPServerOSX;
 			productName = RoutingHTTPServerOSX;
@@ -283,6 +334,12 @@
 			mainGroup = 270B11851628E5A8005A82FA;
 			productRefGroup = 270B11911628E5A8005A82FA /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 27073C30162B78A2006BDF3A /* Products */;
+					ProjectRef = 27073C2F162B78A2006BDF3A /* CocoaHTTPServer.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				270B118F1628E5A8005A82FA /* RoutingHTTPServerStaticIOS */,
@@ -291,6 +348,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		27073C42162B78A3006BDF3A /* libCocoaHTTPServer.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCocoaHTTPServer.a;
+			remoteRef = 27073C41162B78A3006BDF3A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		27073C44162B78A3006BDF3A /* CocoaHTTPServer.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CocoaHTTPServer.framework;
+			remoteRef = 27073C43162B78A3006BDF3A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		270B11B01628E676005A82FA /* Resources */ = {
@@ -366,6 +440,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		27073C4A162B78C1006BDF3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaHTTPServerStaticIOS;
+			targetProxy = 27073C49162B78C1006BDF3A /* PBXContainerItemProxy */;
+		};
+		27073C4C162B78C5006BDF3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaHTTPServerIOS;
+			targetProxy = 27073C4B162B78C5006BDF3A /* PBXContainerItemProxy */;
+		};
+		27073C4E162B78CA006BDF3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaHTTPServerOSX;
+			targetProxy = 27073C4D162B78CA006BDF3A /* PBXContainerItemProxy */;
+		};
 		270B11CB1628E9A5005A82FA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 270B118F1628E5A8005A82FA /* RoutingHTTPServerStaticIOS */;
@@ -387,8 +476,6 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = NO;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -402,7 +489,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(PROJECT_NAME)";
@@ -425,15 +512,13 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = NO;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SDKROOT = iphoneos;
@@ -446,38 +531,30 @@
 		270B119F1628E5A8005A82FA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DSTROOT = /tmp/RoutingHTTPServer.dst;
 				OTHER_LDFLAGS = "-ObjC";
 				PRIVATE_HEADERS_FOLDER_PATH = "$(PRODUCT_NAME)PrivateHeaders";
-				PRODUCT_NAME = RoutingHTTPServer;
 				PUBLIC_HEADERS_FOLDER_PATH = "$(PRODUCT_NAME)Headers";
-				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
 		270B11A01628E5A8005A82FA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DSTROOT = /tmp/RoutingHTTPServer.dst;
 				OTHER_LDFLAGS = "-ObjC";
 				PRIVATE_HEADERS_FOLDER_PATH = "$(PRODUCT_NAME)PrivateHeaders";
-				PRODUCT_NAME = RoutingHTTPServer;
 				PUBLIC_HEADERS_FOLDER_PATH = "$(PRODUCT_NAME)Headers";
-				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
 		270B11AB1628E667005A82FA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = RoutingHTTPServer;
 			};
 			name = Debug;
 		};
 		270B11AC1628E667005A82FA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = RoutingHTTPServer;
 			};
 			name = Release;
 		};
@@ -493,11 +570,8 @@
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
 				);
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RoutingHTTPServerOSX/RoutingHTTPServerOSX-Prefix.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				INSTALL_PATH = "@executable_path/../Frameworks";
-				PRODUCT_NAME = RoutingHTTPServer;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = framework;
 			};
@@ -516,11 +590,8 @@
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
 				);
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RoutingHTTPServerOSX/RoutingHTTPServerOSX-Prefix.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				INSTALL_PATH = "@executable_path/../Frameworks";
-				PRODUCT_NAME = RoutingHTTPServer;
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = framework;
 			};
