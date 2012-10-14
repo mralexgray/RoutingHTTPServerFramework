@@ -6,10 +6,10 @@ if File.exist?('Rakefile.config')
   load 'Rakefile.config'
 end
 
-$name="CocoaAsyncSocket"
+$name="RoutingHTTPServer"
 
 $github_user='ase-lab'
-$github_repo='CocoaAsyncSocketFramework'
+$github_repo='RoutingHTTPServer'
 
 $configuration="Release"
 
