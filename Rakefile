@@ -9,7 +9,7 @@ end
 $name="RoutingHTTPServer"
 
 $github_user='ase-lab'
-$github_repo='RoutingHTTPServer'
+$github_repo='RoutingHTTPServerFramework'
 
 $configuration="Release"
 
