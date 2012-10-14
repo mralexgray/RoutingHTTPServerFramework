@@ -150,8 +150,8 @@ task :publish, :version do |t, args|
   File.open("VERSION", 'w') {|f| f.write(version) }
   Rake::Task["archive"].invoke
   system("git add VERSION")
-  system('git commit -m "Incremented version number to ' + version + '"')
-  system('git tag -a v' + version + ' -m "Creating version ' + version + '."')
+  system('git commit -m "Bump version to ' + version + '"')
+  system('git tag -a v' + version + ' -m "Framework version ' + version + '."')
   system('git push')
   system('git push --tags')
   publish(version)
