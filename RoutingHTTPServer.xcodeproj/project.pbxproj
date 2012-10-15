@@ -47,15 +47,15 @@
 		27073C21162B76DB006BDF3A /* RoutingHTTPServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 27073C0A162B76DB006BDF3A /* RoutingHTTPServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		27073C22162B76DB006BDF3A /* RoutingHTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 27073C0B162B76DB006BDF3A /* RoutingHTTPServer.m */; };
 		27073C23162B76DB006BDF3A /* RoutingHTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 27073C0B162B76DB006BDF3A /* RoutingHTTPServer.m */; };
-		27073C27162B7700006BDF3A /* RoutingHTTPServerLicense.txt in Resources */ = {isa = PBXBuildFile; fileRef = 27073C26162B7700006BDF3A /* RoutingHTTPServerLicense.txt */; };
-		27073C2A162B770E006BDF3A /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 27073C28162B770E006BDF3A /* LICENSE.txt */; };
-		27073C2B162B770E006BDF3A /* VERSION in Resources */ = {isa = PBXBuildFile; fileRef = 27073C29162B770E006BDF3A /* VERSION */; };
-		27073C2C162B7712006BDF3A /* LICENSE.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27073C28162B770E006BDF3A /* LICENSE.txt */; };
-		27073C2D162B7714006BDF3A /* VERSION in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27073C29162B770E006BDF3A /* VERSION */; };
-		27073C2E162B7716006BDF3A /* RoutingHTTPServerLicense.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27073C26162B7700006BDF3A /* RoutingHTTPServerLicense.txt */; };
 		27073C4F162B79EE006BDF3A /* CocoaHTTPServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27073C44162B78A3006BDF3A /* CocoaHTTPServer.framework */; };
 		270B11941628E5A8005A82FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270B11931628E5A8005A82FA /* Foundation.framework */; };
 		270B11B41628E676005A82FA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270B11B31628E676005A82FA /* Cocoa.framework */; };
+		27C38CD5162B986A006E831C /* License-RoutingHTTPServer.txt in Resources */ = {isa = PBXBuildFile; fileRef = 27C38CD2162B986A006E831C /* License-RoutingHTTPServer.txt */; };
+		27C38CD6162B986A006E831C /* License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 27C38CD3162B986A006E831C /* License.txt */; };
+		27C38CD7162B986A006E831C /* Version in Resources */ = {isa = PBXBuildFile; fileRef = 27C38CD4162B986A006E831C /* Version */; };
+		27C38CD8162B9873006E831C /* License-RoutingHTTPServer.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27C38CD2162B986A006E831C /* License-RoutingHTTPServer.txt */; };
+		27C38CD9162B9873006E831C /* License.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27C38CD3162B986A006E831C /* License.txt */; };
+		27C38CDA162B9873006E831C /* Version in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27C38CD4162B986A006E831C /* Version */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,9 +110,9 @@
 			dstPath = "${PRODUCT_NAME}Resources";
 			dstSubfolderSpec = 16;
 			files = (
-				27073C2C162B7712006BDF3A /* LICENSE.txt in CopyFiles */,
-				27073C2D162B7714006BDF3A /* VERSION in CopyFiles */,
-				27073C2E162B7716006BDF3A /* RoutingHTTPServerLicense.txt in CopyFiles */,
+				27C38CD8162B9873006E831C /* License-RoutingHTTPServer.txt in CopyFiles */,
+				27C38CD9162B9873006E831C /* License.txt in CopyFiles */,
+				27C38CDA162B9873006E831C /* Version in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,9 +131,6 @@
 		27073C09162B76DB006BDF3A /* RoutingConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoutingConnection.m; sourceTree = "<group>"; };
 		27073C0A162B76DB006BDF3A /* RoutingHTTPServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoutingHTTPServer.h; sourceTree = "<group>"; };
 		27073C0B162B76DB006BDF3A /* RoutingHTTPServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoutingHTTPServer.m; sourceTree = "<group>"; };
-		27073C26162B7700006BDF3A /* RoutingHTTPServerLicense.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = RoutingHTTPServerLicense.txt; path = Frameworks/RoutingHTTPServer/RoutingHTTPServerLicense.txt; sourceTree = "<group>"; };
-		27073C28162B770E006BDF3A /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
-		27073C29162B770E006BDF3A /* VERSION */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = VERSION; sourceTree = "<group>"; };
 		27073C2F162B78A2006BDF3A /* CocoaHTTPServer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CocoaHTTPServer.xcodeproj; path = Frameworks/CocoaHTTPServer/CocoaHTTPServer.xcodeproj; sourceTree = "<group>"; };
 		270B11901628E5A8005A82FA /* libRoutingHTTPServer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRoutingHTTPServer.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		270B11931628E5A8005A82FA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -142,6 +139,9 @@
 		270B11B61628E676005A82FA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		270B11B71628E676005A82FA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		270B11B81628E676005A82FA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		27C38CD2162B986A006E831C /* License-RoutingHTTPServer.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "License-RoutingHTTPServer.txt"; sourceTree = "<group>"; };
+		27C38CD3162B986A006E831C /* License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
+		27C38CD4162B986A006E831C /* Version */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Version; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,9 +188,9 @@
 		27073C25162B76F4006BDF3A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				27073C28162B770E006BDF3A /* LICENSE.txt */,
-				27073C29162B770E006BDF3A /* VERSION */,
-				27073C26162B7700006BDF3A /* RoutingHTTPServerLicense.txt */,
+				27C38CD2162B986A006E831C /* License-RoutingHTTPServer.txt */,
+				27C38CD3162B986A006E831C /* License.txt */,
+				27C38CD4162B986A006E831C /* Version */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -371,9 +371,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27073C27162B7700006BDF3A /* RoutingHTTPServerLicense.txt in Resources */,
-				27073C2A162B770E006BDF3A /* LICENSE.txt in Resources */,
-				27073C2B162B770E006BDF3A /* VERSION in Resources */,
+				27C38CD5162B986A006E831C /* License-RoutingHTTPServer.txt in Resources */,
+				27C38CD6162B986A006E831C /* License.txt in Resources */,
+				27C38CD7162B986A006E831C /* Version in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

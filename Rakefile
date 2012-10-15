@@ -141,15 +141,15 @@ task :publish, :version do |t, args|
   end
   version = args[:version]
   #check that version is newer than current_version
-  current_version = open("VERSION").gets.strip
+  current_version = open("Version").gets.strip
   if Gem::Version.new(version) < Gem::Version.new(current_version)
     puts("New version (" + version + ") is smaller than current version ("+current_version+")")
     exit(1)
   end
   #write version into versionfile
-  File.open("VERSION", 'w') {|f| f.write(version) }
+  File.open("Version", 'w') {|f| f.write(version) }
   Rake::Task["archive"].invoke
-  system("git add VERSION")
+  system("git add Version")
   system('git commit -m "Bump version to ' + version + '"')
   system('git tag -a v' + version + ' -m "Framework version ' + version + '."')
   system('git push')
