@@ -22,7 +22,7 @@ desc 'Clean, Build, Test and Archive for iOS and OS X'
 task :default => [:ios, :osx]
 
 desc 'Cleans for iOS and OS X'
-task :clean => [:removebuild, 'ios:clean', 'osx:clean']
+task :clean => [:remove_build_dir, 'ios:clean', 'osx:clean']
 
 desc 'Builds for iOS and OS X'
 task :build => ['ios:build', 'osx:build']
@@ -34,14 +34,19 @@ desc 'Archives for iOS and OS X'
 task :archive => ['ios:archive', 'osx:archive']
 
 desc 'Remove build folder'
-task :removebuild do
+task :remove_build_dir do
   rm_rf 'build'
 end
 
 $project
+$ios
+$osx
 
 task :load_project do
-    $project = Xcode.project($name)
+  $project = Xcode.project($name)
+  $ios = $project.target($name+'IOS').config($configuration).builder
+  $osx = $project.target($name+'OSX').config($configuration).builder
+  $osx.sdk = :macosx
 end
 
 desc 'Clean, Build, Test and Archive for iOS'
@@ -49,20 +54,13 @@ task :ios => ['ios:clean', 'ios:build', 'ios:test', 'ios:archive']
 
 namespace :ios do
 
-  $ios
-
-  task :load_scheme do
-    $ios = $project.target($name+'IOS').config($configuration).builder
-    $ios.sdk = :iphoneos
-  end
-
   desc 'Clean for iOS'
-  task :clean => [:init, :removebuild, :load_project, :load_scheme] do
+  task :clean => [:init, :remove_build_dir, :load_project] do
     $ios.clean
   end
   
   desc 'Build for iOS'
-  task :build => [:init, :load_project, :load_scheme] do
+  task :build => [:init, :load_project] do
     $ios.build
   end
   
@@ -85,20 +83,13 @@ task :osx => ['osx:clean', 'osx:build', 'osx:test', 'osx:archive']
 
 namespace :osx do
 
-  $osx
-
-  task :load_scheme do
-    $osx = $project.target($name+'OSX').config($configuration).builder
-    $osx.sdk = :macosx
-  end
-
   desc 'Clean for OS X'
-  task :clean => [:init, :removebuild, :load_project, :load_scheme] do
+  task :clean => [:init, :remove_build_dir, :load_project] do
     $osx.clean
   end
 
   desc 'Build for OS X'
-  task :build => [:init, :load_project, :load_scheme] do
+  task :build => [:init, :load_project] do
     $osx.build
   end
   
@@ -118,8 +109,8 @@ end
 
 desc 'Initialize and update all submodules recursively'
 task :init do
-  system('git submodule foreach --recursive "git submodule update --init && \
-    git checkout master"')
+  system('git submodule update --init --recursive')
+  system('git submodule foreach --recursive "git checkout master"')
 end
 
 desc 'Pull all submodules recursively'
