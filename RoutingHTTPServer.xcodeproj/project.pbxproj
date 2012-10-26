@@ -55,6 +55,18 @@
 		27C38CD9162B9873006E831C /* License.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27C38CD3162B986A006E831C /* License.txt */; };
 		27C38CDA162B9873006E831C /* Version in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27C38CD4162B986A006E831C /* Version */; };
 		D5FE35FE163AF8970090BB94 /* libCocoaHTTPServer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27073C42162B78A3006BDF3A /* libCocoaHTTPServer.a */; };
+		D5FE3635163AF95F0090BB94 /* RoutingHTTPServerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D5FE3634163AF95F0090BB94 /* RoutingHTTPServerTests.m */; };
+		D5FE3636163AF95F0090BB94 /* RoutingHTTPServerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D5FE3634163AF95F0090BB94 /* RoutingHTTPServerTests.m */; };
+		D5FE363C163AF9E00090BB94 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5FE363B163AF9E00090BB94 /* SenTestingKit.framework */; };
+		D5FE363D163AF9E70090BB94 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5FE363B163AF9E00090BB94 /* SenTestingKit.framework */; };
+		D5FE363F163AFA250090BB94 /* libRoutingHTTPServer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 270B11901628E5A8005A82FA /* libRoutingHTTPServer.a */; };
+		D5FE3641163AFA2F0090BB94 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5FE3640163AFA2F0090BB94 /* CFNetwork.framework */; };
+		D5FE3643163AFA340090BB94 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5FE3642163AFA340090BB94 /* Security.framework */; };
+		D5FE3647163AFAC20090BB94 /* RoutingHTTPServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270B11B21628E676005A82FA /* RoutingHTTPServer.framework */; };
+		D5FE3648163AFACD0090BB94 /* CocoaHTTPServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27073C44162B78A3006BDF3A /* CocoaHTTPServer.framework */; };
+		D5FE364B163AFB1B0090BB94 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D5FE364A163AFB1B0090BB94 /* libxml2.dylib */; };
+		D5FE369C163AFD7E0090BB94 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5FE369B163AFD7E0090BB94 /* CoreGraphics.framework */; };
+		D5FE369E163AFD840090BB94 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5FE369D163AFD840090BB94 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +126,20 @@
 			remoteGlobalIDString = D5FE3557163AF4370090BB94;
 			remoteInfo = CocoaHTTPServerOSXTests;
 		};
+		D5FE3637163AF9BB0090BB94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 270B11871628E5A8005A82FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 270B118F1628E5A8005A82FA;
+			remoteInfo = RoutingHTTPServerStaticIOS;
+		};
+		D5FE3639163AF9BF0090BB94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 270B11871628E5A8005A82FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 270B11B11628E676005A82FA;
+			remoteInfo = RoutingHTTPServerOSX;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -150,6 +176,16 @@
 		27C38CD2162B986A006E831C /* License-RoutingHTTPServer.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "License-RoutingHTTPServer.txt"; sourceTree = "<group>"; };
 		27C38CD3162B986A006E831C /* License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
 		27C38CD4162B986A006E831C /* Version */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Version; sourceTree = "<group>"; };
+		D5FE3604163AF8F40090BB94 /* RoutingHTTPServerIOSTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoutingHTTPServerIOSTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5FE361D163AF8FE0090BB94 /* RoutingHTTPServerOSXTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoutingHTTPServerOSXTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5FE3633163AF95F0090BB94 /* RoutingHTTPServerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoutingHTTPServerTests.h; sourceTree = "<group>"; };
+		D5FE3634163AF95F0090BB94 /* RoutingHTTPServerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoutingHTTPServerTests.m; sourceTree = "<group>"; };
+		D5FE363B163AF9E00090BB94 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		D5FE3640163AFA2F0090BB94 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		D5FE3642163AFA340090BB94 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D5FE364A163AFB1B0090BB94 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		D5FE369B163AFD7E0090BB94 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D5FE369D163AFD840090BB94 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +202,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				27073C4F162B79EE006BDF3A /* CocoaHTTPServer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5FE3600163AF8F40090BB94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5FE369E163AFD840090BB94 /* UIKit.framework in Frameworks */,
+				D5FE369C163AFD7E0090BB94 /* CoreGraphics.framework in Frameworks */,
+				D5FE364B163AFB1B0090BB94 /* libxml2.dylib in Frameworks */,
+				D5FE3643163AFA340090BB94 /* Security.framework in Frameworks */,
+				D5FE3641163AFA2F0090BB94 /* CFNetwork.framework in Frameworks */,
+				D5FE363F163AFA250090BB94 /* libRoutingHTTPServer.a in Frameworks */,
+				D5FE363C163AF9E00090BB94 /* SenTestingKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5FE3619163AF8FE0090BB94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5FE363D163AF9E70090BB94 /* SenTestingKit.framework in Frameworks */,
+				D5FE3647163AFAC20090BB94 /* RoutingHTTPServer.framework in Frameworks */,
+				D5FE3648163AFACD0090BB94 /* CocoaHTTPServer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +277,7 @@
 			isa = PBXGroup;
 			children = (
 				27073BFF162B76DB006BDF3A /* RoutingHTTPServer */,
+				D5FE3632163AF95F0090BB94 /* RoutingHTTPServerTests */,
 				27073C25162B76F4006BDF3A /* Resources */,
 				270B11921628E5A8005A82FA /* Frameworks */,
 				270B11911628E5A8005A82FA /* Products */,
@@ -228,6 +289,8 @@
 			children = (
 				270B11901628E5A8005A82FA /* libRoutingHTTPServer.a */,
 				270B11B21628E676005A82FA /* RoutingHTTPServer.framework */,
+				D5FE3604163AF8F40090BB94 /* RoutingHTTPServerIOSTests.octest */,
+				D5FE361D163AF8FE0090BB94 /* RoutingHTTPServerOSXTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -235,7 +298,9 @@
 		270B11921628E5A8005A82FA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D5FE3644163AFA470090BB94 /* iOS-Testing */,
 				D5FE35FD163AF8760090BB94 /* Shared */,
+				D5FE363E163AF9EC0090BB94 /* Shared-Testing */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -246,6 +311,35 @@
 				27073C2F162B78A2006BDF3A /* CocoaHTTPServer.xcodeproj */,
 			);
 			name = Shared;
+			sourceTree = "<group>";
+		};
+		D5FE3632163AF95F0090BB94 /* RoutingHTTPServerTests */ = {
+			isa = PBXGroup;
+			children = (
+				D5FE3633163AF95F0090BB94 /* RoutingHTTPServerTests.h */,
+				D5FE3634163AF95F0090BB94 /* RoutingHTTPServerTests.m */,
+			);
+			path = RoutingHTTPServerTests;
+			sourceTree = "<group>";
+		};
+		D5FE363E163AF9EC0090BB94 /* Shared-Testing */ = {
+			isa = PBXGroup;
+			children = (
+				D5FE363B163AF9E00090BB94 /* SenTestingKit.framework */,
+			);
+			name = "Shared-Testing";
+			sourceTree = "<group>";
+		};
+		D5FE3644163AFA470090BB94 /* iOS-Testing */ = {
+			isa = PBXGroup;
+			children = (
+				D5FE369D163AFD840090BB94 /* UIKit.framework */,
+				D5FE369B163AFD7E0090BB94 /* CoreGraphics.framework */,
+				D5FE364A163AFB1B0090BB94 /* libxml2.dylib */,
+				D5FE3642163AFA340090BB94 /* Security.framework */,
+				D5FE3640163AFA2F0090BB94 /* CFNetwork.framework */,
+			);
+			name = "iOS-Testing";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,6 +413,44 @@
 			productReference = 270B11B21628E676005A82FA /* RoutingHTTPServer.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		D5FE3603163AF8F40090BB94 /* RoutingHTTPServerIOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5FE3615163AF8F40090BB94 /* Build configuration list for PBXNativeTarget "RoutingHTTPServerIOSTests" */;
+			buildPhases = (
+				D5FE35FF163AF8F40090BB94 /* Sources */,
+				D5FE3600163AF8F40090BB94 /* Frameworks */,
+				D5FE3601163AF8F40090BB94 /* Resources */,
+				D5FE3602163AF8F40090BB94 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D5FE3638163AF9BB0090BB94 /* PBXTargetDependency */,
+			);
+			name = RoutingHTTPServerIOSTests;
+			productName = RoutingHTTPServerIOSTests;
+			productReference = D5FE3604163AF8F40090BB94 /* RoutingHTTPServerIOSTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		D5FE361C163AF8FE0090BB94 /* RoutingHTTPServerOSXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5FE362F163AF8FF0090BB94 /* Build configuration list for PBXNativeTarget "RoutingHTTPServerOSXTests" */;
+			buildPhases = (
+				D5FE3618163AF8FE0090BB94 /* Sources */,
+				D5FE3619163AF8FE0090BB94 /* Frameworks */,
+				D5FE361A163AF8FE0090BB94 /* Resources */,
+				D5FE361B163AF8FE0090BB94 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D5FE363A163AF9BF0090BB94 /* PBXTargetDependency */,
+			);
+			name = RoutingHTTPServerOSXTests;
+			productName = RoutingHTTPServerOSXTests;
+			productReference = D5FE361D163AF8FE0090BB94 /* RoutingHTTPServerOSXTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -349,6 +481,8 @@
 				270B118F1628E5A8005A82FA /* RoutingHTTPServerStaticIOS */,
 				270B11A91628E667005A82FA /* RoutingHTTPServerIOS */,
 				270B11B11628E676005A82FA /* RoutingHTTPServerOSX */,
+				D5FE3603163AF8F40090BB94 /* RoutingHTTPServerIOSTests */,
+				D5FE361C163AF8FE0090BB94 /* RoutingHTTPServerOSXTests */,
 			);
 		};
 /* End PBXProject section */
@@ -395,6 +529,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D5FE3601163AF8F40090BB94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5FE361A163AF8FE0090BB94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -426,6 +574,32 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/${FRAMEWORK_VERSION}/Headers\"\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/${FRAMEWORK_VERSION}/Resources\"\n\n# Link the \"Current\" version to \"${FRAMEWORK_VERSION}\"\n/bin/ln -sfh \"${FRAMEWORK_VERSION}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/Current\"\n/bin/ln -sfh Versions/Current/Headers \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Headers\"\n/bin/ln -sfh Versions/Current/Resources \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Resources\"\n/bin/ln -sfh \"Versions/Current/${PRODUCT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/${PRODUCT_NAME}\"\n\n# The -a ensures that the headers maintain the source modification date so that we don't constantly\n# cause propagating rebuilds of files that import these headers.\n/bin/cp -a \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/${FRAMEWORK_VERSION}/Headers\"\n\n/bin/cp -a \"${BUILT_PRODUCTS_DIR}/${PROJECT_NAME}Resources/\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/${FRAMEWORK_VERSION}/Resources\"\n";
 		};
+		D5FE3602163AF8F40090BB94 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		D5FE361B163AF8FE0090BB94 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -455,6 +629,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D5FE35FF163AF8F40090BB94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5FE3635163AF95F0090BB94 /* RoutingHTTPServerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5FE3618163AF8FE0090BB94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5FE3636163AF95F0090BB94 /* RoutingHTTPServerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -477,6 +667,16 @@
 			isa = PBXTargetDependency;
 			target = 270B118F1628E5A8005A82FA /* RoutingHTTPServerStaticIOS */;
 			targetProxy = 270B11CA1628E9A5005A82FA /* PBXContainerItemProxy */;
+		};
+		D5FE3638163AF9BB0090BB94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 270B118F1628E5A8005A82FA /* RoutingHTTPServerStaticIOS */;
+			targetProxy = D5FE3637163AF9BB0090BB94 /* PBXContainerItemProxy */;
+		};
+		D5FE363A163AF9BF0090BB94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 270B11B11628E676005A82FA /* RoutingHTTPServerOSX */;
+			targetProxy = D5FE3639163AF9BF0090BB94 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -609,6 +809,71 @@
 			};
 			name = Release;
 		};
+		D5FE3616163AF8F40090BB94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		D5FE3617163AF8F40090BB94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		D5FE3630163AF8FF0090BB94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		D5FE3631163AF8FF0090BB94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -644,6 +909,24 @@
 			buildConfigurations = (
 				270B11C41628E676005A82FA /* Debug */,
 				270B11C51628E676005A82FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5FE3615163AF8F40090BB94 /* Build configuration list for PBXNativeTarget "RoutingHTTPServerIOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5FE3616163AF8F40090BB94 /* Debug */,
+				D5FE3617163AF8F40090BB94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5FE362F163AF8FF0090BB94 /* Build configuration list for PBXNativeTarget "RoutingHTTPServerOSXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5FE3630163AF8FF0090BB94 /* Debug */,
+				D5FE3631163AF8FF0090BB94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
