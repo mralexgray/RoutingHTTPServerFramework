@@ -139,7 +139,7 @@
 	response = [http routeMethod:method withPath:path parameters:params request:request connection:nil];
 	STAssertNotNil(response.proxiedResponse, @"Proxied response is nil for %@ %@", method, path);
 
-	NSUInteger length = [response.proxiedResponse contentLength];
+	NSUInteger length = (NSUInteger)[response.proxiedResponse contentLength];
 	NSData *data = [response.proxiedResponse readDataOfLength:length];
 	NSString *responseString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
 	STAssertEqualObjects(responseString, path, @"Unexpected response for %@ %@", method, path);
