@@ -40,13 +40,18 @@ end
 
 $project
 $ios
+$iostests
 $osx
+$osxtests
 
 task :load_project do
   $project = Xcode.project($name)
   $ios = $project.target($name+'IOS').config($configuration).builder
+  $iostests = $project.target($name+'IOSTests').config($configuration).builder
   $osx = $project.target($name+'OSX').config($configuration).builder
   $osx.sdk = :macosx
+  $osxtests = $project.target($name+'OSXTests').config($configuration).builder
+  $osxtests.sdk = :macosx
 end
 
 desc 'Clean, Build, Test and Archive for iOS'
@@ -65,8 +70,15 @@ namespace :ios do
   end
   
   desc 'Test for iOS'
-  task :test do
-    puts('Tests for iOS are not implemented - hopefully (!) - yet.')
+  task :test => [:init, :load_project] do
+    $iostests.build
+    report = $iostests.test do |report|
+	  report.add_formatter :junit, 'build/'+$configuration+'-iphonesimulator/test-reports'
+      report.add_formatter :stdout
+    end
+    if report.failed? || report.suites.count == 0  || report.suites[0].tests.count == 0
+      fail('At least one test failed.')
+    end
   end
   
   desc 'Archive for iOS'
@@ -94,8 +106,15 @@ namespace :osx do
   end
   
   desc 'Test for OS X'
-  task :test do
-    puts('Tests for OS X are not implemented - hopefully (!) - yet.')
+  task :test => [:init, :load_project] do
+    $osxtests.build
+    report = $osxtests.test(:sdk => :macosx) do |report|
+	  report.add_formatter :junit, 'build/'+$configuration+'/test-reports'
+      report.add_formatter :stdout
+    end
+    if report.failed? || report.suites.count == 0  || report.suites[0].tests.count == 0
+      fail('At least one test failed.')
+    end
   end
 
   desc 'Archive for OS X'
