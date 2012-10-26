@@ -21,11 +21,6 @@
 	return self;
 }
 
-- (void)dealloc {
-	if (routeQueue)
-		dispatch_release(routeQueue);
-}
-
 - (void)setDefaultHeaders:(NSDictionary *)headers {
 	if (headers) {
 		defaultHeaders = [headers mutableCopy];
@@ -43,12 +38,6 @@
 }
 
 - (void)setRouteQueue:(dispatch_queue_t)queue {
-	if (queue)
-		dispatch_retain(queue);
-
-	if (routeQueue)
-		dispatch_release(routeQueue);
-
 	routeQueue = queue;
 }
 
