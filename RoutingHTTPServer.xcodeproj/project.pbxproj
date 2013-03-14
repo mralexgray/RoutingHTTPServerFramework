@@ -54,6 +54,8 @@
 		27C38CD8162B9873006E831C /* License-RoutingHTTPServer.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27C38CD2162B986A006E831C /* License-RoutingHTTPServer.txt */; };
 		27C38CD9162B9873006E831C /* License.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27C38CD3162B986A006E831C /* License.txt */; };
 		27C38CDA162B9873006E831C /* Version in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27C38CD4162B986A006E831C /* Version */; };
+		7B37773A16F1644F0083CBB5 /* KSHTMLWriterFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B37773716F164300083CBB5 /* KSHTMLWriterFramework.framework */; };
+		7B37773C16F1649B0083CBB5 /* KSHTMLWriterFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7B37773716F164300083CBB5 /* KSHTMLWriterFramework.framework */; };
 		D5FE35FE163AF8970090BB94 /* libCocoaHTTPServer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27073C42162B78A3006BDF3A /* libCocoaHTTPServer.a */; };
 		D5FE3635163AF95F0090BB94 /* RoutingHTTPServerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D5FE3634163AF95F0090BB94 /* RoutingHTTPServerTests.m */; };
 		D5FE3636163AF95F0090BB94 /* RoutingHTTPServerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D5FE3634163AF95F0090BB94 /* RoutingHTTPServerTests.m */; };
@@ -112,6 +114,34 @@
 			remoteGlobalIDString = 270B118F1628E5A8005A82FA;
 			remoteInfo = RoutingHTTPServerStaticIOS;
 		};
+		7B37773216F164300083CBB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B37772A16F1642F0083CBB5 /* KSHTMLWriter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 22352B9014C6FCB00031F5DD;
+			remoteInfo = KSHTMLWriter;
+		};
+		7B37773416F164300083CBB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B37772A16F1642F0083CBB5 /* KSHTMLWriter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 22352BA414C6FCB00031F5DD;
+			remoteInfo = KSHTMLWriterTests;
+		};
+		7B37773616F164300083CBB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B37772A16F1642F0083CBB5 /* KSHTMLWriter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9FC4242D15F57A0F001B9220;
+			remoteInfo = KSHTMLWriterFramework;
+		};
+		7B37773816F164360083CBB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B37772A16F1642F0083CBB5 /* KSHTMLWriter.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FC4242C15F57A0F001B9220;
+			remoteInfo = KSHTMLWriterFramework;
+		};
 		D5FE35F8163AF86A0090BB94 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 27073C2F162B78A2006BDF3A /* CocoaHTTPServer.xcodeproj */;
@@ -155,6 +185,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7B37773B16F1648D0083CBB5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7B37773C16F1649B0083CBB5 /* KSHTMLWriterFramework.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -176,6 +216,7 @@
 		27C38CD2162B986A006E831C /* License-RoutingHTTPServer.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "License-RoutingHTTPServer.txt"; sourceTree = "<group>"; };
 		27C38CD3162B986A006E831C /* License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
 		27C38CD4162B986A006E831C /* Version */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Version; sourceTree = "<group>"; };
+		7B37772A16F1642F0083CBB5 /* KSHTMLWriter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KSHTMLWriter.xcodeproj; path = Frameworks/KSHTMLWriter/KSHTMLWriter.xcodeproj; sourceTree = "<group>"; };
 		D5FE3604163AF8F40090BB94 /* RoutingHTTPServerIOSTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoutingHTTPServerIOSTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5FE361D163AF8FE0090BB94 /* RoutingHTTPServerOSXTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoutingHTTPServerOSXTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5FE3633163AF95F0090BB94 /* RoutingHTTPServerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoutingHTTPServerTests.h; sourceTree = "<group>"; };
@@ -201,6 +242,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B37773A16F1644F0083CBB5 /* KSHTMLWriterFramework.framework in Frameworks */,
 				27073C4F162B79EE006BDF3A /* CocoaHTTPServer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +318,7 @@
 		270B11851628E5A8005A82FA = {
 			isa = PBXGroup;
 			children = (
+				7B37772A16F1642F0083CBB5 /* KSHTMLWriter.xcodeproj */,
 				27073BFF162B76DB006BDF3A /* RoutingHTTPServer */,
 				D5FE3632163AF95F0090BB94 /* RoutingHTTPServerTests */,
 				27073C25162B76F4006BDF3A /* Resources */,
@@ -303,6 +346,16 @@
 				D5FE363E163AF9EC0090BB94 /* Shared-Testing */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7B37772B16F1642F0083CBB5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B37773316F164300083CBB5 /* libKSHTMLWriter.a */,
+				7B37773516F164300083CBB5 /* KSHTMLWriterTests.octest */,
+				7B37773716F164300083CBB5 /* KSHTMLWriterFramework.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		D5FE35FD163AF8760090BB94 /* Shared */ = {
@@ -402,10 +455,12 @@
 				270B11AE1628E676005A82FA /* Frameworks */,
 				270B11AF1628E676005A82FA /* Headers */,
 				270B11B01628E676005A82FA /* Resources */,
+				7B37773B16F1648D0083CBB5 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7B37773916F164360083CBB5 /* PBXTargetDependency */,
 				27073C4E162B78CA006BDF3A /* PBXTargetDependency */,
 			);
 			name = RoutingHTTPServerOSX;
@@ -475,6 +530,10 @@
 					ProductGroup = 27073C30162B78A2006BDF3A /* Products */;
 					ProjectRef = 27073C2F162B78A2006BDF3A /* CocoaHTTPServer.xcodeproj */;
 				},
+				{
+					ProductGroup = 7B37772B16F1642F0083CBB5 /* Products */;
+					ProjectRef = 7B37772A16F1642F0083CBB5 /* KSHTMLWriter.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -500,6 +559,27 @@
 			fileType = wrapper.framework;
 			path = CocoaHTTPServer.framework;
 			remoteRef = 27073C43162B78A3006BDF3A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7B37773316F164300083CBB5 /* libKSHTMLWriter.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libKSHTMLWriter.a;
+			remoteRef = 7B37773216F164300083CBB5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7B37773516F164300083CBB5 /* KSHTMLWriterTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = KSHTMLWriterTests.octest;
+			remoteRef = 7B37773416F164300083CBB5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7B37773716F164300083CBB5 /* KSHTMLWriterFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = KSHTMLWriterFramework.framework;
+			remoteRef = 7B37773616F164300083CBB5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		D5FE35F9163AF86A0090BB94 /* CocoaHTTPServerIOSTests.octest */ = {
@@ -667,6 +747,11 @@
 			isa = PBXTargetDependency;
 			target = 270B118F1628E5A8005A82FA /* RoutingHTTPServerStaticIOS */;
 			targetProxy = 270B11CA1628E9A5005A82FA /* PBXContainerItemProxy */;
+		};
+		7B37773916F164360083CBB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KSHTMLWriterFramework;
+			targetProxy = 7B37773816F164360083CBB5 /* PBXContainerItemProxy */;
 		};
 		D5FE3638163AF9BB0090BB94 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
