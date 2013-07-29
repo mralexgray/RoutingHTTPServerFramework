@@ -21,6 +21,13 @@
 	return self;
 }
 
+#if !OS_OBJECT_USE_OBJC_RETAIN_RELEASE
+- (void)dealloc {
+	if (routeQueue)
+		dispatch_release(routeQueue);
+}
+#endif
+
 - (void)setDefaultHeaders:(NSDictionary *)headers {
 	if (headers) {
 		defaultHeaders = [headers mutableCopy];
@@ -38,6 +45,14 @@
 }
 
 - (void)setRouteQueue:(dispatch_queue_t)queue {
+#if !OS_OBJECT_USE_OBJC_RETAIN_RELEASE
+	if (queue)
+		dispatch_retain(queue);
+
+	if (routeQueue)
+		dispatch_release(routeQueue);
+#endif
+
 	routeQueue = queue;
 }
 
@@ -82,14 +97,6 @@
 
 - (void)delete:(NSString *)path withBlock:(RequestHandler)block {
 	[self handleMethod:@"DELETE" withPath:path block:block];
-}
-
-- (void)subscribe:(NSString *)path withBlock:(RequestHandler)block {
-	[self handleMethod:@"SUBSCRIBE" withPath:path block:block];
-}
-
-- (void)unsubscribe:(NSString *)path withBlock:(RequestHandler)block {
-	[self handleMethod:@"UNSUBSCRIBE" withPath:path block:block];
 }
 
 - (void)handleMethod:(NSString *)method withPath:(NSString *)path block:(RequestHandler)block {
@@ -243,10 +250,9 @@
 			[self handleRoute:route withRequest:request response:response];
 		} else {
 			// Process the route on the specified queue
-			__weak RoutingHTTPServer *blockSelf = self;
 			dispatch_sync(routeQueue, ^{
 				@autoreleasepool {
-					[blockSelf handleRoute:route withRequest:request response:response];
+					[self handleRoute:route withRequest:request response:response];
 				}
 			});
 		}
