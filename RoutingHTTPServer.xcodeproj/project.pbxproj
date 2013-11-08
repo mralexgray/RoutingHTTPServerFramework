@@ -54,6 +54,7 @@
 		27C38CD8162B9873006E831C /* License-RoutingHTTPServer.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27C38CD2162B986A006E831C /* License-RoutingHTTPServer.txt */; };
 		27C38CD9162B9873006E831C /* License.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27C38CD3162B986A006E831C /* License.txt */; };
 		27C38CDA162B9873006E831C /* Version in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27C38CD4162B986A006E831C /* Version */; };
+		7BBD9D57182C8BD3007395D5 /* CocoaHTTPServer.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27073C44162B78A3006BDF3A /* CocoaHTTPServer.framework */; };
 		D5FE35FE163AF8970090BB94 /* libCocoaHTTPServer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27073C42162B78A3006BDF3A /* libCocoaHTTPServer.a */; };
 		D5FE3635163AF95F0090BB94 /* RoutingHTTPServerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D5FE3634163AF95F0090BB94 /* RoutingHTTPServerTests.m */; };
 		D5FE3636163AF95F0090BB94 /* RoutingHTTPServerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D5FE3634163AF95F0090BB94 /* RoutingHTTPServerTests.m */; };
@@ -152,6 +153,16 @@
 				27C38CD8162B9873006E831C /* License-RoutingHTTPServer.txt in CopyFiles */,
 				27C38CD9162B9873006E831C /* License.txt in CopyFiles */,
 				27C38CDA162B9873006E831C /* Version in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BBD9D54182C8BC6007395D5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7BBD9D57182C8BD3007395D5 /* CocoaHTTPServer.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +413,7 @@
 				270B11AE1628E676005A82FA /* Frameworks */,
 				270B11AF1628E676005A82FA /* Headers */,
 				270B11B01628E676005A82FA /* Resources */,
+				7BBD9D54182C8BC6007395D5 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -777,7 +789,13 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
-				INSTALL_PATH = "@executable_path/../Frameworks";
+				INSTALL_PATH = "@loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "@rpath";
+				OTHER_LDFLAGS = (
+					"-sub_umbrella",
+					CocoaHTTPServer,
+					"-ObjC",
+				);
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = framework;
 			};
@@ -791,7 +809,13 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
-				INSTALL_PATH = "@executable_path/../Frameworks";
+				INSTALL_PATH = "@loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "@rpath";
+				OTHER_LDFLAGS = (
+					"-sub_umbrella",
+					CocoaHTTPServer,
+					"-ObjC",
+				);
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = framework;
 			};
