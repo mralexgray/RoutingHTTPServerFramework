@@ -1,24 +1,23 @@
-#import <Foundation/Foundation.h>
 
 #import <CocoaHTTPServer/HTTPResponse.h>
 
-@class HTTPConnection;
-@class HTTPResponseProxy;
+//@class HTTPConnection, HTTPResponseProxy;
 
 @interface RouteResponse : NSObject
 
-@property (nonatomic, assign, readonly) HTTPConnection *connection;
-@property (nonatomic, readonly) NSDictionary *headers;
-@property (nonatomic, strong) NSObject<HTTPResponse> *response;
-@property (nonatomic, readonly) NSObject<HTTPResponse> *proxiedResponse;
-@property (nonatomic) NSInteger statusCode;
+@property (assign,readonly)						 HTTPConnection * connection;
+@property (readonly)										 NSDictionary * headers;
+@property (nonatomic,strong)	 NSObject<HTTPResponse> * response;
+@property (readonly)					 NSObject<HTTPResponse> * proxiedResponse;
+@property (nonatomic)											  NSInteger   statusCode;
 
-- (id)initWithConnection:(HTTPConnection *)theConnection;
-- (void)setHeader:(NSString *)field value:(NSString *)value;
-- (void)respondWithString:(NSString *)string;
-- (void)respondWithString:(NSString *)string encoding:(NSStringEncoding)encoding;
-- (void)respondWithData:(NSData *)data;
-- (void)respondWithFile:(NSString *)path;
-- (void)respondWithFile:(NSString *)path async:(BOOL)async;
+-   (id) initWithConnection:(HTTPConnection*)theConnection;
+
+- (void) respondWithData:    (NSData*)data;
+- (void) respondWithFile:    (NSString*)path;
+- (void) respondWithString:  (NSString*)string;
+- (void) setHeader:          (NSString*)field	    value:(NSString *)value;
+- (void) respondWithFile:    (NSString*)path			async:(BOOL)async;
+- (void) respondWithString:  (NSString*)string encoding:(NSStringEncoding)encoding;
 
 @end

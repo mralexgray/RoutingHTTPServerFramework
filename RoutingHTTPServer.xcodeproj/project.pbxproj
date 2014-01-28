@@ -47,24 +47,28 @@
 		27073C21162B76DB006BDF3A /* RoutingHTTPServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 27073C0A162B76DB006BDF3A /* RoutingHTTPServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		27073C22162B76DB006BDF3A /* RoutingHTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 27073C0B162B76DB006BDF3A /* RoutingHTTPServer.m */; };
 		27073C23162B76DB006BDF3A /* RoutingHTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 27073C0B162B76DB006BDF3A /* RoutingHTTPServer.m */; };
-		27073C4F162B79EE006BDF3A /* CocoaHTTPServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27073C44162B78A3006BDF3A /* CocoaHTTPServer.framework */; };
 		27C38CD5162B986A006E831C /* License-RoutingHTTPServer.txt in Resources */ = {isa = PBXBuildFile; fileRef = 27C38CD2162B986A006E831C /* License-RoutingHTTPServer.txt */; };
 		27C38CD6162B986A006E831C /* License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 27C38CD3162B986A006E831C /* License.txt */; };
 		27C38CD7162B986A006E831C /* Version in Resources */ = {isa = PBXBuildFile; fileRef = 27C38CD4162B986A006E831C /* Version */; };
 		27C38CD8162B9873006E831C /* License-RoutingHTTPServer.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27C38CD2162B986A006E831C /* License-RoutingHTTPServer.txt */; };
 		27C38CD9162B9873006E831C /* License.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27C38CD3162B986A006E831C /* License.txt */; };
 		27C38CDA162B9873006E831C /* Version in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27C38CD4162B986A006E831C /* Version */; };
-		7BBD9D57182C8BD3007395D5 /* CocoaHTTPServer.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27073C44162B78A3006BDF3A /* CocoaHTTPServer.framework */; };
+		7B2AEF5B18858E51008A07C6 /* AtoZConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BBD9DC1182D22DF007395D5 /* AtoZConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B2AEF5C18858E57008A07C6 /* AtoZConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BBD9DC2182D22DF007395D5 /* AtoZConnection.m */; };
+		7B69D384182FFF0D00BC0611 /* AZRouteResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B69D382182FFF0D00BC0611 /* AZRouteResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B69D385182FFF0D00BC0611 /* AZRouteResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B69D383182FFF0D00BC0611 /* AZRouteResponse.m */; };
+		7B8E0E3F1846CEF6000BEF0F /* CocoaHTTPServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27073C44162B78A3006BDF3A /* CocoaHTTPServer.framework */; };
+		7B8E0E401846CF16000BEF0F /* CocoaHTTPServer.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27073C44162B78A3006BDF3A /* CocoaHTTPServer.framework */; };
+		7BA450AB182FD0020076F6EA /* twitter_bootstrap_admin in Resources */ = {isa = PBXBuildFile; fileRef = 7BA450AA182FD0020076F6EA /* twitter_bootstrap_admin */; };
+		7BBD9DC0182D1D0D007395D5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BBD9DBF182D1D0D007395D5 /* Cocoa.framework */; };
+		7BBD9DCC182E78E9007395D5 /* gridly-socket.js in Resources */ = {isa = PBXBuildFile; fileRef = 7BBD9DC9182E78E9007395D5 /* gridly-socket.js */; };
+		7BBD9DCD182E7B0A007395D5 /* AZHTTPRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BBD9DC7182E78E9007395D5 /* AZHTTPRouter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BBD9DCF182E8AFC007395D5 /* AZHTTPRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BBD9DC8182E78E9007395D5 /* AZHTTPRouter.m */; };
 		D5FE35FE163AF8970090BB94 /* libCocoaHTTPServer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27073C42162B78A3006BDF3A /* libCocoaHTTPServer.a */; };
 		D5FE3635163AF95F0090BB94 /* RoutingHTTPServerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D5FE3634163AF95F0090BB94 /* RoutingHTTPServerTests.m */; };
-		D5FE3636163AF95F0090BB94 /* RoutingHTTPServerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D5FE3634163AF95F0090BB94 /* RoutingHTTPServerTests.m */; };
-		D5FE363C163AF9E00090BB94 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5FE363B163AF9E00090BB94 /* SenTestingKit.framework */; };
-		D5FE363D163AF9E70090BB94 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5FE363B163AF9E00090BB94 /* SenTestingKit.framework */; };
 		D5FE363F163AFA250090BB94 /* libRoutingHTTPServer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 270B11901628E5A8005A82FA /* libRoutingHTTPServer.a */; };
 		D5FE3641163AFA2F0090BB94 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5FE3640163AFA2F0090BB94 /* CFNetwork.framework */; };
 		D5FE3643163AFA340090BB94 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5FE3642163AFA340090BB94 /* Security.framework */; };
-		D5FE3647163AFAC20090BB94 /* RoutingHTTPServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270B11B21628E676005A82FA /* RoutingHTTPServer.framework */; };
-		D5FE3648163AFACD0090BB94 /* CocoaHTTPServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27073C44162B78A3006BDF3A /* CocoaHTTPServer.framework */; };
 		D5FE364B163AFB1B0090BB94 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D5FE364A163AFB1B0090BB94 /* libxml2.dylib */; };
 		D5FE369C163AFD7E0090BB94 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5FE369B163AFD7E0090BB94 /* CoreGraphics.framework */; };
 		D5FE369E163AFD840090BB94 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5FE369D163AFD840090BB94 /* UIKit.framework */; };
@@ -113,6 +117,13 @@
 			remoteGlobalIDString = 270B118F1628E5A8005A82FA;
 			remoteInfo = RoutingHTTPServerStaticIOS;
 		};
+		7BB7964F1883D65200298D82 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 270B11871628E5A8005A82FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 270B11B11628E676005A82FA;
+			remoteInfo = RoutingHTTPServerOSX;
+		};
 		D5FE35F8163AF86A0090BB94 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 27073C2F162B78A2006BDF3A /* CocoaHTTPServer.xcodeproj */;
@@ -133,13 +144,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 270B118F1628E5A8005A82FA;
 			remoteInfo = RoutingHTTPServerStaticIOS;
-		};
-		D5FE3639163AF9BF0090BB94 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 270B11871628E5A8005A82FA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 270B11B11628E676005A82FA;
-			remoteInfo = RoutingHTTPServerOSX;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -162,7 +166,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				7BBD9D57182C8BD3007395D5 /* CocoaHTTPServer.framework in CopyFiles */,
+				7B8E0E401846CF16000BEF0F /* CocoaHTTPServer.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,7 +175,7 @@
 /* Begin PBXFileReference section */
 		27073C00162B76DB006BDF3A /* HTTPResponseProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPResponseProxy.h; sourceTree = "<group>"; };
 		27073C01162B76DB006BDF3A /* HTTPResponseProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPResponseProxy.m; sourceTree = "<group>"; };
-		27073C02162B76DB006BDF3A /* Route.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Route.h; sourceTree = "<group>"; };
+		27073C02162B76DB006BDF3A /* Route.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = Route.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		27073C03162B76DB006BDF3A /* Route.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Route.m; sourceTree = "<group>"; };
 		27073C04162B76DB006BDF3A /* RouteRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouteRequest.h; sourceTree = "<group>"; };
 		27073C05162B76DB006BDF3A /* RouteRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouteRequest.m; sourceTree = "<group>"; };
@@ -184,14 +188,25 @@
 		27073C2F162B78A2006BDF3A /* CocoaHTTPServer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CocoaHTTPServer.xcodeproj; path = Frameworks/CocoaHTTPServer/CocoaHTTPServer.xcodeproj; sourceTree = "<group>"; };
 		270B11901628E5A8005A82FA /* libRoutingHTTPServer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRoutingHTTPServer.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		270B11B21628E676005A82FA /* RoutingHTTPServer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RoutingHTTPServer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		27C38CD2162B986A006E831C /* License-RoutingHTTPServer.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "License-RoutingHTTPServer.txt"; sourceTree = "<group>"; };
+		27C38CD2162B986A006E831C /* License-RoutingHTTPServer.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "License-RoutingHTTPServer.txt"; path = "../License-RoutingHTTPServer.txt"; sourceTree = "<group>"; };
 		27C38CD3162B986A006E831C /* License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
 		27C38CD4162B986A006E831C /* Version */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Version; sourceTree = "<group>"; };
+		7B69D382182FFF0D00BC0611 /* AZRouteResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZRouteResponse.h; sourceTree = "<group>"; };
+		7B69D383182FFF0D00BC0611 /* AZRouteResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZRouteResponse.m; sourceTree = "<group>"; };
+		7BA450AA182FD0020076F6EA /* twitter_bootstrap_admin */ = {isa = PBXFileReference; lastKnownFileType = folder; path = twitter_bootstrap_admin; sourceTree = "<group>"; };
+		7BB796381883D30D00298D82 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		7BB796421883D65200298D82 /* RoutingHTTPServerOSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoutingHTTPServerOSXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BB7964C1883D65200298D82 /* RoutingHTTPServerOSXTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoutingHTTPServerOSXTests.m; sourceTree = "<group>"; };
+		7BBD9D60182CA06E007395D5 /* RoutingHTTPServer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = "RoutingHTTPServer-Prefix.pch"; path = "../../../RoutingHTTPServer-Prefix.pch"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		7BBD9DBC182D1255007395D5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; name = README.md; path = ../RoutingHTTPServer/README.md; sourceTree = "<group>"; };
+		7BBD9DBF182D1D0D007395D5 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		7BBD9DC1182D22DF007395D5 /* AtoZConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = AtoZConnection.h; path = Frameworks/RoutingHTTPServer/Source/AtoZConnection.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		7BBD9DC2182D22DF007395D5 /* AtoZConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AtoZConnection.m; path = Frameworks/RoutingHTTPServer/Source/AtoZConnection.m; sourceTree = "<group>"; };
+		7BBD9DC7182E78E9007395D5 /* AZHTTPRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZHTTPRouter.h; sourceTree = "<group>"; };
+		7BBD9DC8182E78E9007395D5 /* AZHTTPRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZHTTPRouter.m; sourceTree = "<group>"; };
+		7BBD9DC9182E78E9007395D5 /* gridly-socket.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "gridly-socket.js"; sourceTree = "<group>"; };
 		D5FE3604163AF8F40090BB94 /* RoutingHTTPServerIOSTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoutingHTTPServerIOSTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5FE361D163AF8FE0090BB94 /* RoutingHTTPServerOSXTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoutingHTTPServerOSXTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5FE3633163AF95F0090BB94 /* RoutingHTTPServerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoutingHTTPServerTests.h; sourceTree = "<group>"; };
 		D5FE3634163AF95F0090BB94 /* RoutingHTTPServerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoutingHTTPServerTests.m; sourceTree = "<group>"; };
-		D5FE363B163AF9E00090BB94 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		D5FE3640163AFA2F0090BB94 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		D5FE3642163AFA340090BB94 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		D5FE364A163AFB1B0090BB94 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
@@ -212,7 +227,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27073C4F162B79EE006BDF3A /* CocoaHTTPServer.framework in Frameworks */,
+				7B8E0E3F1846CEF6000BEF0F /* CocoaHTTPServer.framework in Frameworks */,
+				7BBD9DC0182D1D0D007395D5 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,17 +242,6 @@
 				D5FE3643163AFA340090BB94 /* Security.framework in Frameworks */,
 				D5FE3641163AFA2F0090BB94 /* CFNetwork.framework in Frameworks */,
 				D5FE363F163AFA250090BB94 /* libRoutingHTTPServer.a in Frameworks */,
-				D5FE363C163AF9E00090BB94 /* SenTestingKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D5FE3619163AF8FE0090BB94 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D5FE363D163AF9E70090BB94 /* SenTestingKit.framework in Frameworks */,
-				D5FE3647163AFAC20090BB94 /* RoutingHTTPServer.framework in Frameworks */,
-				D5FE3648163AFACD0090BB94 /* CocoaHTTPServer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +263,7 @@
 				27073C09162B76DB006BDF3A /* RoutingConnection.m */,
 				27073C0A162B76DB006BDF3A /* RoutingHTTPServer.h */,
 				27073C0B162B76DB006BDF3A /* RoutingHTTPServer.m */,
+				7BBD9D60182CA06E007395D5 /* RoutingHTTPServer-Prefix.pch */,
 			);
 			name = RoutingHTTPServer;
 			path = Frameworks/RoutingHTTPServer/Source;
@@ -266,7 +272,7 @@
 		27073C25162B76F4006BDF3A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				27C38CD2162B986A006E831C /* License-RoutingHTTPServer.txt */,
+				D5FE3632163AF95F0090BB94 /* RoutingHTTPServerTests */,
 				27C38CD3162B986A006E831C /* License.txt */,
 				27C38CD4162B986A006E831C /* Version */,
 			);
@@ -287,10 +293,18 @@
 		270B11851628E5A8005A82FA = {
 			isa = PBXGroup;
 			children = (
+				7BA450AA182FD0020076F6EA /* twitter_bootstrap_admin */,
+				7BBD9DC7182E78E9007395D5 /* AZHTTPRouter.h */,
+				7BBD9DC8182E78E9007395D5 /* AZHTTPRouter.m */,
+				7BBD9DC9182E78E9007395D5 /* gridly-socket.js */,
+				7BBD9DC1182D22DF007395D5 /* AtoZConnection.h */,
+				7BBD9DC2182D22DF007395D5 /* AtoZConnection.m */,
+				7B69D382182FFF0D00BC0611 /* AZRouteResponse.h */,
+				7B69D383182FFF0D00BC0611 /* AZRouteResponse.m */,
+				7BBD9DBC182D1255007395D5 /* README.md */,
 				27073BFF162B76DB006BDF3A /* RoutingHTTPServer */,
-				D5FE3632163AF95F0090BB94 /* RoutingHTTPServerTests */,
+				27073C2F162B78A2006BDF3A /* CocoaHTTPServer.xcodeproj */,
 				27073C25162B76F4006BDF3A /* Resources */,
-				270B11921628E5A8005A82FA /* Frameworks */,
 				270B11911628E5A8005A82FA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -301,7 +315,7 @@
 				270B11901628E5A8005A82FA /* libRoutingHTTPServer.a */,
 				270B11B21628E676005A82FA /* RoutingHTTPServer.framework */,
 				D5FE3604163AF8F40090BB94 /* RoutingHTTPServerIOSTests.octest */,
-				D5FE361D163AF8FE0090BB94 /* RoutingHTTPServerOSXTests.octest */,
+				7BB796421883D65200298D82 /* RoutingHTTPServerOSXTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -309,36 +323,23 @@
 		270B11921628E5A8005A82FA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7BB796381883D30D00298D82 /* XCTest.framework */,
+				7BBD9DBF182D1D0D007395D5 /* Cocoa.framework */,
 				D5FE3644163AFA470090BB94 /* iOS-Testing */,
-				D5FE35FD163AF8760090BB94 /* Shared */,
-				D5FE363E163AF9EC0090BB94 /* Shared-Testing */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D5FE35FD163AF8760090BB94 /* Shared */ = {
-			isa = PBXGroup;
-			children = (
-				27073C2F162B78A2006BDF3A /* CocoaHTTPServer.xcodeproj */,
-			);
-			name = Shared;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		D5FE3632163AF95F0090BB94 /* RoutingHTTPServerTests */ = {
 			isa = PBXGroup;
 			children = (
-				D5FE3633163AF95F0090BB94 /* RoutingHTTPServerTests.h */,
+				270B11921628E5A8005A82FA /* Frameworks */,
 				D5FE3634163AF95F0090BB94 /* RoutingHTTPServerTests.m */,
+				7BB7964C1883D65200298D82 /* RoutingHTTPServerOSXTests.m */,
+				27C38CD2162B986A006E831C /* License-RoutingHTTPServer.txt */,
 			);
 			path = RoutingHTTPServerTests;
-			sourceTree = "<group>";
-		};
-		D5FE363E163AF9EC0090BB94 /* Shared-Testing */ = {
-			isa = PBXGroup;
-			children = (
-				D5FE363B163AF9E00090BB94 /* SenTestingKit.framework */,
-			);
-			name = "Shared-Testing";
 			sourceTree = "<group>";
 		};
 		D5FE3644163AFA470090BB94 /* iOS-Testing */ = {
@@ -360,10 +361,13 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B2AEF5B18858E51008A07C6 /* AtoZConnection.h in Headers */,
+				7BBD9DCD182E7B0A007395D5 /* AZHTTPRouter.h in Headers */,
 				27073C0D162B76DB006BDF3A /* HTTPResponseProxy.h in Headers */,
 				27073C11162B76DB006BDF3A /* Route.h in Headers */,
 				27073C15162B76DB006BDF3A /* RouteRequest.h in Headers */,
 				27073C19162B76DB006BDF3A /* RouteResponse.h in Headers */,
+				7B69D384182FFF0D00BC0611 /* AZRouteResponse.h in Headers */,
 				27073C1D162B76DB006BDF3A /* RoutingConnection.h in Headers */,
 				27073C21162B76DB006BDF3A /* RoutingHTTPServer.h in Headers */,
 			);
@@ -414,6 +418,7 @@
 				270B11AF1628E676005A82FA /* Headers */,
 				270B11B01628E676005A82FA /* Resources */,
 				7BBD9D54182C8BC6007395D5 /* CopyFiles */,
+				7B8E0E411846CFB4000BEF0F /* Add Frameworks Link In Umbrella */,
 			);
 			buildRules = (
 			);
@@ -424,6 +429,22 @@
 			productName = RoutingHTTPServerOSX;
 			productReference = 270B11B21628E676005A82FA /* RoutingHTTPServer.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		7BB796411883D65200298D82 /* RoutingHTTPServerOSXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BB796511883D65200298D82 /* Build configuration list for PBXNativeTarget "RoutingHTTPServerOSXTests" */;
+			buildPhases = (
+				7BB7963E1883D65200298D82 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7BB796501883D65200298D82 /* PBXTargetDependency */,
+			);
+			name = RoutingHTTPServerOSXTests;
+			productName = RoutingHTTPServerOSXTests;
+			productReference = 7BB796421883D65200298D82 /* RoutingHTTPServerOSXTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		D5FE3603163AF8F40090BB94 /* RoutingHTTPServerIOSTests */ = {
 			isa = PBXNativeTarget;
@@ -444,33 +465,19 @@
 			productReference = D5FE3604163AF8F40090BB94 /* RoutingHTTPServerIOSTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
-		D5FE361C163AF8FE0090BB94 /* RoutingHTTPServerOSXTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D5FE362F163AF8FF0090BB94 /* Build configuration list for PBXNativeTarget "RoutingHTTPServerOSXTests" */;
-			buildPhases = (
-				D5FE3618163AF8FE0090BB94 /* Sources */,
-				D5FE3619163AF8FE0090BB94 /* Frameworks */,
-				D5FE361A163AF8FE0090BB94 /* Resources */,
-				D5FE361B163AF8FE0090BB94 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D5FE363A163AF9BF0090BB94 /* PBXTargetDependency */,
-			);
-			name = RoutingHTTPServerOSXTests;
-			productName = RoutingHTTPServerOSXTests;
-			productReference = D5FE361D163AF8FE0090BB94 /* RoutingHTTPServerOSXTests.octest */;
-			productType = "com.apple.product-type.bundle";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		270B11871628E5A8005A82FA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "ASE Group";
+				TargetAttributes = {
+					7BB796411883D65200298D82 = {
+						TestTargetID = 270B11B11628E676005A82FA;
+					};
+				};
 			};
 			buildConfigurationList = 270B118A1628E5A8005A82FA /* Build configuration list for PBXProject "RoutingHTTPServer" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -490,11 +497,11 @@
 			);
 			projectRoot = "";
 			targets = (
-				270B118F1628E5A8005A82FA /* RoutingHTTPServerStaticIOS */,
-				270B11A91628E667005A82FA /* RoutingHTTPServerIOS */,
 				270B11B11628E676005A82FA /* RoutingHTTPServerOSX */,
+				7BB796411883D65200298D82 /* RoutingHTTPServerOSXTests */,
+				270B11A91628E667005A82FA /* RoutingHTTPServerIOS */,
+				270B118F1628E5A8005A82FA /* RoutingHTTPServerStaticIOS */,
 				D5FE3603163AF8F40090BB94 /* RoutingHTTPServerIOSTests */,
-				D5FE361C163AF8FE0090BB94 /* RoutingHTTPServerOSXTests */,
 			);
 		};
 /* End PBXProject section */
@@ -535,20 +542,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BBD9DCC182E78E9007395D5 /* gridly-socket.js in Resources */,
 				27C38CD5162B986A006E831C /* License-RoutingHTTPServer.txt in Resources */,
 				27C38CD6162B986A006E831C /* License.txt in Resources */,
+				7BA450AB182FD0020076F6EA /* twitter_bootstrap_admin in Resources */,
 				27C38CD7162B986A006E831C /* Version in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D5FE3601163AF8F40090BB94 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D5FE361A163AF8FE0090BB94 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -586,20 +588,21 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/${FRAMEWORK_VERSION}/Headers\"\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/${FRAMEWORK_VERSION}/Resources\"\n\n# Link the \"Current\" version to \"${FRAMEWORK_VERSION}\"\n/bin/ln -sfh \"${FRAMEWORK_VERSION}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/Current\"\n/bin/ln -sfh Versions/Current/Headers \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Headers\"\n/bin/ln -sfh Versions/Current/Resources \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Resources\"\n/bin/ln -sfh \"Versions/Current/${PRODUCT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/${PRODUCT_NAME}\"\n\n# The -a ensures that the headers maintain the source modification date so that we don't constantly\n# cause propagating rebuilds of files that import these headers.\n/bin/cp -a \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/${FRAMEWORK_VERSION}/Headers\"\n\n/bin/cp -a \"${BUILT_PRODUCTS_DIR}/${PROJECT_NAME}Resources/\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/${FRAMEWORK_VERSION}/Resources\"\n";
 		};
-		D5FE3602163AF8F40090BB94 /* ShellScript */ = {
+		7B8E0E411846CFB4000BEF0F /* Add Frameworks Link In Umbrella */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Add Frameworks Link In Umbrella";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+			shellScript = "cd \"${CODESIGNING_FOLDER_PATH}\"\n# ln -s ../../Original Original\nln -sF Versions/Current/Frameworks ../../Frameworks\n";
 		};
-		D5FE361B163AF8FE0090BB94 /* ShellScript */ = {
+		D5FE3602163AF8F40090BB94 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -632,12 +635,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B69D385182FFF0D00BC0611 /* AZRouteResponse.m in Sources */,
 				27073C0F162B76DB006BDF3A /* HTTPResponseProxy.m in Sources */,
 				27073C13162B76DB006BDF3A /* Route.m in Sources */,
 				27073C17162B76DB006BDF3A /* RouteRequest.m in Sources */,
+				7B2AEF5C18858E57008A07C6 /* AtoZConnection.m in Sources */,
 				27073C1B162B76DB006BDF3A /* RouteResponse.m in Sources */,
+				7BBD9DCF182E8AFC007395D5 /* AZHTTPRouter.m in Sources */,
 				27073C1F162B76DB006BDF3A /* RoutingConnection.m in Sources */,
 				27073C23162B76DB006BDF3A /* RoutingHTTPServer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BB7963E1883D65200298D82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -646,14 +659,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5FE3635163AF95F0090BB94 /* RoutingHTTPServerTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D5FE3618163AF8FE0090BB94 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D5FE3636163AF95F0090BB94 /* RoutingHTTPServerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -680,15 +685,15 @@
 			target = 270B118F1628E5A8005A82FA /* RoutingHTTPServerStaticIOS */;
 			targetProxy = 270B11CA1628E9A5005A82FA /* PBXContainerItemProxy */;
 		};
+		7BB796501883D65200298D82 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 270B11B11628E676005A82FA /* RoutingHTTPServerOSX */;
+			targetProxy = 7BB7964F1883D65200298D82 /* PBXContainerItemProxy */;
+		};
 		D5FE3638163AF9BB0090BB94 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 270B118F1628E5A8005A82FA /* RoutingHTTPServerStaticIOS */;
 			targetProxy = D5FE3637163AF9BB0090BB94 /* PBXContainerItemProxy */;
-		};
-		D5FE363A163AF9BF0090BB94 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 270B11B11628E676005A82FA /* RoutingHTTPServerOSX */;
-			targetProxy = D5FE3639163AF9BF0090BB94 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -696,9 +701,12 @@
 		270B119C1628E5A8005A82FA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -714,7 +722,9 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "$(PROJECT_NAME)-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
@@ -730,9 +740,12 @@
 		270B119D1628E5A8005A82FA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -741,7 +754,9 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "$(PROJECT_NAME)-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
@@ -785,16 +800,22 @@
 		270B11C41628E676005A82FA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_MODULES_AUTOLINK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch *.xcode* (*) .DS_Store CVS .svn .git .hg";
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/RoutingHTTPServer-Prefix.pch";
 				INSTALL_PATH = "@loader_path/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "@rpath";
 				OTHER_LDFLAGS = (
+					"-ObjC",
 					"-sub_umbrella",
 					CocoaHTTPServer,
-					"-ObjC",
+					"-framework",
+					Cocoa,
 				);
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = framework;
@@ -804,20 +825,113 @@
 		270B11C51628E676005A82FA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_MODULES_AUTOLINK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch *.xcode* (*) .DS_Store CVS .svn .git .hg";
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/RoutingHTTPServer-Prefix.pch";
 				INSTALL_PATH = "@loader_path/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "@rpath";
 				OTHER_LDFLAGS = (
+					"-ObjC",
 					"-sub_umbrella",
 					CocoaHTTPServer,
-					"-ObjC",
+					"-framework",
+					Cocoa,
 				);
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		7BB796521883D65200298D82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					AtoZ,
+					"-lRedGreenXC",
+					"-framework",
+					XCTest,
+					"-all_load",
+					"-ObjC",
+					"-framework",
+					Cocoa,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		7BB796531883D65200298D82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					AtoZ,
+					"-lRedGreenXC",
+					"-framework",
+					XCTest,
+					"-all_load",
+					"-ObjC",
+					"-framework",
+					Cocoa,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
@@ -844,32 +958,6 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Release;
-		};
-		D5FE3630163AF8FF0090BB94 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		D5FE3631163AF8FF0090BB94 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
@@ -913,20 +1001,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		7BB796511883D65200298D82 /* Build configuration list for PBXNativeTarget "RoutingHTTPServerOSXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BB796521883D65200298D82 /* Debug */,
+				7BB796531883D65200298D82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D5FE3615163AF8F40090BB94 /* Build configuration list for PBXNativeTarget "RoutingHTTPServerIOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D5FE3616163AF8F40090BB94 /* Debug */,
 				D5FE3617163AF8F40090BB94 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D5FE362F163AF8FF0090BB94 /* Build configuration list for PBXNativeTarget "RoutingHTTPServerOSXTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D5FE3630163AF8FF0090BB94 /* Debug */,
-				D5FE3631163AF8FF0090BB94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

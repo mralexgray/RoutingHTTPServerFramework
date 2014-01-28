@@ -1,9 +1,8 @@
-#import <Foundation/Foundation.h>
 
 #import <CocoaHTTPServer/HTTPConnection.h>
 
-@class RoutingHTTPServer;
-
-@interface RoutingConnection : HTTPConnection
-
+@class				      	RoutingHTTPServer ;
+@interface            RoutingConnection : HTTPConnection
+@property  (readonly) RoutingHTTPServer * router;
+@property			             NSDictionary * headers;
 @end

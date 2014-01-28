@@ -1,82 +1,30 @@
+
 #import "HTTPResponseProxy.h"
 
 @implementation HTTPResponseProxy
 
-@synthesize response;
-@synthesize status;
+-      (void) forwardInvocation:(NSInvocation*)inv { // if our "response" can handle it.. do so
 
-- (NSInteger)status {
-	if (status != 0) {
-		return status;
-	} else if ([response respondsToSelector:@selector(status)]) {
-		return [response status];
-	}
+	[_response respondsToSelector:inv.selector] ? [inv invokeWithTarget:_response]
+                                              : [super forwardInvocation:inv];
+}  // Forward all other invocations to the actual response object
+-      (BOOL) respondsToSelector:(SEL)sel          {
 
-	return 200;
+  return [super respondsToSelector:sel] ?: [_response respondsToSelector:sel];
 }
 
-- (void)setStatus:(NSInteger)statusCode {
-	status = statusCode;
-}
-
-- (NSInteger)customStatus {
-	return status;
-}
-
-// Implement the required HTTPResponse methods
-- (UInt64)contentLength {
-	if (response) {
-		return [response contentLength];
-	} else {
-		return 0;
-	}
-}
-
-- (UInt64)offset {
-	if (response) {
-		return [response offset];
-	} else {
-		return 0;
-	}
-}
-
-- (void)setOffset:(UInt64)offset {
-	if (response) {
-		[response setOffset:offset];
-	}
-}
-
-- (NSData *)readDataOfLength:(NSUInteger)length {
-	if (response) {
-		return [response readDataOfLength:length];
-	} else {
-		return nil;
-	}
-}
-
-- (BOOL)isDone {
-	if (response) {
-		return [response isDone];
-	} else {
-		return YES;
-	}
-}
-
-// Forward all other invocations to the actual response object
-- (void)forwardInvocation:(NSInvocation *)invocation {
-	if ([response respondsToSelector:[invocation selector]]) {
-		[invocation invokeWithTarget:response];
-	} else {
-		[super forwardInvocation:invocation];
-	}
-}
-
-- (BOOL)respondsToSelector:(SEL)selector {
-	if ([super respondsToSelector:selector])
-		return YES;
-
-	return [response respondsToSelector:selector];
+- (NSInteger) customStatus                    { return _status;                                          }
+-    (UInt64) contentLength                   {	return _response ?  _response.contentLength	      :   0; }		 /* Implement the required HTTPResponse methods */
+-    (UInt64) offset                          { return _response ?  _response.offset              :   0; }
+-      (void) setOffset:(UInt64)off           {        _response ? [_response setOffset:off]      : nil; }
+-   (NSData*) readDataOfLength:(NSUInteger)l	{ return _response ? [_response readDataOfLength:l] : nil; }
+-      (BOOL) isDone													{ return _response ?  _response.isDone							: YES; }
+- (NSInteger) status                          { return _status   ?: [_response respondsToSelector:@selector(status)]
+                                                                 ?   _response.status : 200;
 }
 
 @end
 
+
+//-      (void) setStatus:(NSInteger)sCode	{ status = sCode; }
+// @synthesize response, status;

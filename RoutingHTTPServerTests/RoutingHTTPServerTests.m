@@ -1,9 +1,10 @@
-#import "RoutingHTTPServerTests.h"
 
-#import <CocoaHTTPServer/HTTPMessage.h>
-#import <CocoaHTTPServer/HTTPDataResponse.h>
+#import <XCTest/XCTest.h>
 
-#import "RoutingHTTPServer.h"
+//#import <CocoaHTTPServer/HTTPMessage.h>
+//#import <CocoaHTTPServer/HTTPDataResponse.h>
+
+#import <AtoZ/AtoZ.h>
 
 #ifdef __x86_64__
 #define FMTNSINT "li"
@@ -11,85 +12,42 @@
 #define FMTNSINT "i"
 #endif
 
-@interface RoutingHTTPServerTests ()
 
-- (void)setupRoutes;
-- (void)verifyRouteWithMethod:(NSString *)method path:(NSString *)path;
-- (void)verifyRouteNotFoundWithMethod:(NSString *)method path:(NSString *)path;
+@interface RoutingHTTPServerTests : XCTestCase {
+	RoutingHTTPServer *http;
+}
 - (void)handleSelectorRequest:(RouteRequest *)request withResponse:(RouteResponse *)response;
+- (void)verifyRouteWithMethod:(NSString *)method path:(NSString *)path;
 - (void)verifyMethod:(NSString *)method path:(NSString *)path contentType:(NSString *)contentType inputString:(NSString *)inputString responseString:(NSString *)expectedResponseString;
-
+- (void)verifyRouteNotFoundWithMethod:(NSString *)method path:(NSString *)path;
 @end
 
 @implementation RoutingHTTPServerTests
 
-- (void)setUp {
-	[super setUp];
-	http = [[RoutingHTTPServer alloc] init];
+- (void)setUp	{
+
+  [super setUp];
+	http = RoutingHTTPServer.new;
 	[self setupRoutes];
 }
 
-- (void)tearDown {
-	[super tearDown];
+- (void)tearDown
+{
+    [super tearDown];
 }
-
-- (void)testRoutes {
-	RouteResponse *response;
-	NSDictionary *params = [NSDictionary dictionary];
-	HTTPMessage *request = [[HTTPMessage alloc] initEmptyRequest];
-
-	response = [http routeMethod:@"GET" withPath:@"/null" parameters:params request:request connection:nil];
-	STAssertNil(response, @"Received response for path that does not exist");
-
-	[self verifyRouteWithMethod:@"GET" path:@"/hello"];
-	[self verifyRouteWithMethod:@"GET" path:@"/hello/you"];
-	[self verifyRouteWithMethod:@"GET" path:@"/page/3"];
-	[self verifyRouteWithMethod:@"GET" path:@"/files/test.txt"];
-	[self verifyRouteWithMethod:@"GET" path:@"/selector"];
-	[self verifyRouteWithMethod:@"POST" path:@"/form"];
-	[self verifyRouteWithMethod:@"POST" path:@"/users/bob"];
-	[self verifyRouteWithMethod:@"POST" path:@"/users/bob/dosomething"];
-
-	[self verifyRouteNotFoundWithMethod:@"POST" path:@"/hello"];
-	[self verifyRouteNotFoundWithMethod:@"POST" path:@"/selector"];
-	[self verifyRouteNotFoundWithMethod:@"GET" path:@"/page/a3"];
-	[self verifyRouteNotFoundWithMethod:@"GET" path:@"/page/3a"];
-	[self verifyRouteNotFoundWithMethod:@"GET" path:@"/form"];
-}
-
-- (void)testPost {
-	NSError *error = nil;
-	if (![http start:&error]) {
-		STFail(@"HTTP server failed to start");
-	}
-
-	NSString *xmlString = @"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
-		"<greenLevel>supergreen</greenLevel>";
-
-	[self verifyMethod:@"POST"
-				  path:@"/xml"
-		   contentType:@"text/xml"
-		   inputString:xmlString
-		responseString:@"supergreen"];
-}
-
 - (void)setupRoutes {
 	[http get:@"/hello" withBlock:^(RouteRequest *request, RouteResponse *response) {
 		[response respondWithString:@"/hello"];
 	}];
-
 	[http get:@"/hello/:name" withBlock:^(RouteRequest *request, RouteResponse *response) {
 		[response respondWithString:[NSString stringWithFormat:@"/hello/%@", [request param:@"name"]]];
 	}];
-
 	[http post:@"/form" withBlock:^(RouteRequest *request, RouteResponse *response) {
 		[response respondWithString:@"/form"];
 	}];
-
 	[http post:@"/users/:name" withBlock:^(RouteRequest *request, RouteResponse *response) {
 		[response respondWithString:[NSString stringWithFormat:@"/users/%@", [request param:@"name"]]];
 	}];
-
 	[http post:@"/users/:name/:action" withBlock:^(RouteRequest *request, RouteResponse *response) {
 		[response respondWithString:[NSString stringWithFormat:@"/users/%@/%@",
 									 [request param:@"name"],
@@ -127,6 +85,39 @@
 	}];
 }
 
+- (void)testRoutes {
+	RouteResponse *response;
+	NSDictionary *params = [NSDictionary dictionary];
+	HTTPMessage *request = [[HTTPMessage alloc] initEmptyRequest];
+
+	response = [http routeMethod:@"GET" withPath:@"/null" parameters:params request:request connection:nil];
+	XCTAssertNil(response, @"Received response for path that does not exist");
+
+	[self verifyRouteWithMethod:@"GET" path:@"/hello"];
+	[self verifyRouteWithMethod:@"GET" path:@"/hello/you"];
+	[self verifyRouteWithMethod:@"GET" path:@"/page/3"];
+	[self verifyRouteWithMethod:@"GET" path:@"/files/test.txt"];
+	[self verifyRouteWithMethod:@"GET" path:@"/selector"];
+	[self verifyRouteWithMethod:@"POST" path:@"/form"];
+	[self verifyRouteWithMethod:@"POST" path:@"/users/bob"];
+	[self verifyRouteWithMethod:@"POST" path:@"/users/bob/dosomething"];
+
+	[self verifyRouteNotFoundWithMethod:@"POST" path:@"/hello"];
+	[self verifyRouteNotFoundWithMethod:@"POST" path:@"/selector"];
+	[self verifyRouteNotFoundWithMethod:@"GET" path:@"/page/a3"];
+	[self verifyRouteNotFoundWithMethod:@"GET" path:@"/page/3a"];
+	[self verifyRouteNotFoundWithMethod:@"GET" path:@"/form"];
+}
+
+- (void)testPost {
+	NSError *error = nil;
+	if (![http start:&error]) XCTFail(@"HTTP server failed to start");
+
+	NSString *xmlString = @"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<greenLevel>supergreen</greenLevel>";
+
+	[self verifyMethod:@"POST"  path:@"/xml" contentType:@"text/xml" inputString:xmlString responseString:@"supergreen"];
+}
+
 - (void)handleSelectorRequest:(RouteRequest *)request withResponse:(RouteResponse *)response {
 	[response respondWithString:@"/selector"];
 }
@@ -137,12 +128,12 @@
 	HTTPMessage *request = [[HTTPMessage alloc] initEmptyRequest];
 
 	response = [http routeMethod:method withPath:path parameters:params request:request connection:nil];
-	STAssertNotNil(response.proxiedResponse, @"Proxied response is nil for %@ %@", method, path);
+	XCTAssertNotNil(response.proxiedResponse, @"Proxied response is nil for %@ %@", method, path);
 
 	NSUInteger length = (NSUInteger)[response.proxiedResponse contentLength];
 	NSData *data = [response.proxiedResponse readDataOfLength:length];
 	NSString *responseString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-	STAssertEqualObjects(responseString, path, @"Unexpected response for %@ %@", method, path);
+	XCTAssertEqualObjects(responseString, path, @"Unexpected response for %@ %@", method, path);
 }
 
 - (void)verifyRouteNotFoundWithMethod:(NSString *)method path:(NSString *)path {
@@ -151,7 +142,7 @@
 	HTTPMessage *request = [[HTTPMessage alloc] initEmptyRequest];
 
 	response = [http routeMethod:method withPath:path parameters:params request:request connection:nil];
-	STAssertNil(response, @"Response should have been nil for %@ %@", method, path);
+	XCTAssertNil(response, @"Response should have been nil for %@ %@", method, path);
 }
 
 - (void)verifyMethod:(NSString *)method path:(NSString *)path contentType:(NSString *)contentType inputString:(NSString *)inputString responseString:(NSString *)expectedResponseString {
@@ -172,16 +163,16 @@
 	NSURLResponse *response;
 	NSHTTPURLResponse *httpResponse;
 	NSData *responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
-	STAssertNotNil(response, @"No response received for %@ %@", method, path);
-	STAssertNotNil(responseData, @"No response data received for %@ %@", method, path);
-	STAssertTrue([response isKindOfClass:[NSHTTPURLResponse class]], @"Response is not an NSHTTPURLResponse");
+	XCTAssertNotNil(response, @"No response received for %@ %@", method, path);
+	XCTAssertNotNil(responseData, @"No response data received for %@ %@", method, path);
+	XCTAssertTrue([response isKindOfClass:[NSHTTPURLResponse class]], @"Response is not an NSHTTPURLResponse");
 
 	httpResponse = (NSHTTPURLResponse *)response;
     NSInteger expectedStatusCode = 200;
-	STAssertEquals([httpResponse statusCode], expectedStatusCode, @"Unexpected status code for %@ %@", method, path);
+	XCTAssertEqual([httpResponse statusCode], expectedStatusCode, @"Unexpected status code for %@ %@", method, path);
 
 	NSString *responseString = [[NSString alloc] initWithBytes:[responseData bytes] length:[responseData length] encoding:NSUTF8StringEncoding];
-	STAssertEqualObjects(responseString, expectedResponseString, @"Unexpected response for %@ %@", method, path);
+	XCTAssertEqualObjects(responseString, expectedResponseString, @"Unexpected response for %@ %@", method, path);
 }
 
 @end

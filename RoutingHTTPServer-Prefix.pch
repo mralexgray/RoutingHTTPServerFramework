@@ -1,0 +1,14 @@
+
+
+#ifdef __OBJC__
+
+@import Foundation;
+@import Cocoa;
+
+  #if __has_feature(objc_arc_weak)
+  #define NATOMICWEAK nonatomic,weak
+  #else
+  #define NATOMICWEAK nonatomic,assign
+  #endif
+
+#endif

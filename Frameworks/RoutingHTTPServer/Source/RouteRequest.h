@@ -1,16 +1,21 @@
-#import <Foundation/Foundation.h>
-@class HTTPMessage;
 
+
+@class			HTTPMessage ;
 @interface RouteRequest : NSObject
 
-@property (nonatomic, readonly) NSDictionary *headers;
-@property (nonatomic, readonly) NSDictionary *params;
+-        (id) initWithHTTPMessage:(HTTPMessage*)msg parameters:(NSDictionary*)params;
 
-- (id)initWithHTTPMessage:(HTTPMessage *)msg parameters:(NSDictionary *)params;
-- (NSString *)header:(NSString *)field;
-- (id)param:(NSString *)name;
-- (NSString *)method;
-- (NSURL *)url;
-- (NSData *)body;
+@property HTTPMessage *message;
+
+- (NSString*) header:(NSString*)field;
+-        (id) param: (NSString*)name;
+
+@property (readonly)     NSString * method;
+@property (readonly)        NSURL * URL;
+@property (readonly)       NSData * body;
+@property (readonly) NSDictionary * headers,
+																	* params;
+
+@property (readonly)      NSArray * components, *wildcards;
 
 @end
